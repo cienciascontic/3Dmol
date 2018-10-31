@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>$3Dmol Example</title>
+<title>Ejemplo de $3Dmol</title>
 <script src="../build/3Dmol.js"></script>
 
 <style>
@@ -124,26 +124,26 @@ var readText = function(input,func) {
 	<hr style="margin: 0;">
 
 	<br>
-	<input type="button" value="Stick"
+	<input type="button" value="Palito"
 		onclick="glviewer.setStyle({},{stick:{}}); glviewer.render();"></input>
-	<input type="button" value="Line"
+	<input type="button" value="Línea"
 		onclick="glviewer.setStyle({},{line:{}}); glviewer.render();"></input>
-	<input type="button" value="Cross"
+	<input type="button" value="Cruz"
 		onclick="glviewer.setStyle({},{cross:{linewidth:2}}); glviewer.render();"></input>
-	<input type="button" value="Sphere"
+	<input type="button" value="Esfera"
 		onclick="glviewer.setStyle({},{sphere:{}}); glviewer.render();"></input>
 	<input type="button" value="Cartoon"
 		onclick="glviewer.setStyle({hetflag:false},{cartoon:{}}); glviewer.render();"></input>
-	<input type="button" value="Label alpha C's"
+	<input type="button" value="Etiquetar carbonos alfa"
 		onclick="addLabels(glviewer); glviewer.render();"></input>
 	<input type="button" value="Color SS"
 		onclick="colorSS(glviewer);"></input>
 	<br>
-	<input type="button" value="Surface1"
+	<input type="button" value="Superficie1"
 		onclick="surf1 = glviewer.addSurface($3Dmol.SurfaceType.VDW, {}, {hetflag:false,chain:'A'},{hetflag:false,chain:'A'});"></input>
-	<input type="button" value="Surface2"
+	<input type="button" value="Superficie2"
 		onclick="surf2 = glviewer.addSurface($3Dmol.SurfaceType.MS, {map:{prop:'partialCharge',scheme:new $3Dmol.Gradient.RWB(-.6,.6)}, opacity:0.85}, {chain:'B'},{chain:'B'});"></input>
-	<input type="button" value="RM Surfaces"
+	<input type="button" value="Superficies RM"
 		onclick="glviewer.removeAllSurfaces();"></input>
 	<br>
 	<input type="button" value="Recenter" onclick="glviewer.zoomTo();"></input>
